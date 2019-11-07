@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML + CSS + Javascript 範例</title>
+    <style>
+        body {
+            text-align:center;
+        }
+        h1 {
+            margin: 30px 15px 0;
+	        font-weight: 300;
+        }
+        img {border-radius: 10%;}
+        .hover img {
+	        -webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+	        -webkit-transition: .3s ease-in-out;
+	        transition: .3s ease-in-out;
+        }
+        .hover img:hover {
+	        -webkit-filter: grayscale(0);
+	        filter: grayscale(0);
+        }
+    </style>
+</head>
+<body>
+
+<h1>哈囉！<mark>HTML + CSS + Javascript</mark>！</h1>
+
+<div class="hover">
+    <img src="khpy.jpg" onclick="alert('不要點我啦！')"/>
+</div>
+
+</body>
+</html>
